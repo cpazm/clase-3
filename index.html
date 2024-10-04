@@ -135,7 +135,32 @@
 
                     <p>A propósito de poner allí una rasterizada, SVG también nos entrega la posibilidad colocar dentro suyo un JPG, PNG o WebP, lo que nos permite trabajar de mejor manera con los pesos de los archivos: ¡No tenemos que trazar con varita mágica la imagen rasterizada para luego sumar textos, líneas y otros elementos gráficos vectorizados sobre ella! Basta con incrustarla.</p>
 
-                    <object data="img/moneda.svg" type="image/svg+xml"></object>
+                    <object data="img/moneda-ancha.svg" type="image/svg+xml" class="d-none d-lg-block"></object>
+
+                    <object data="img/moneda-angosta.svg" type="image/svg+xml" class="d-lg-none"></object>
+
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
                 </article>
             </main>
@@ -146,6 +171,8 @@
         <footer class="m-0 py-3 text-center">
             <small>Cristian Paz © 2024. Diplomado de Infografía UC.</small>
         </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <script>
             const vinculos = document.querySelectorAll("a");
